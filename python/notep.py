@@ -1,3 +1,5 @@
+# classes from apna college python series
+
 # basics = None
 # print("prithvi")
 # name = "prithvi raj mandal"
@@ -110,12 +112,76 @@
 
 # practice inputs
 
-name = input("enter your name: ")
-age = int(input("enter your age: "))
-balance = float(input("enter your balance: "))
-print("my name is ", name)
-print("my age is ", age)
-print("my bank balance is ", balance)
-print(type(name))
-print(type(age))
-print(type(balance))
+# name = input("enter your name: ")
+# age = int(input("enter your age: "))
+# balance = float(input("enter your balance: "))
+# print("my name is ", name)
+# print("my age is ", age)
+# print("my bank balance is ", balance)
+# print(type(name))
+# print(type(age))
+# print(type(balance))
+
+# day 2 of python
+# string 
+# it is a datatype that stores sequence of characters
+
+# basic operations
+# concatenation
+# hello + world = helloworld
+
+# length of str
+# len(str)
+
+# str = "this is a string..."
+# str1 = "can add numbers"
+# str2 = str + str1
+# print(str1)
+# lens = len(str)
+# len2 = len(str2)
+# str functions
+# print(str[0:4])
+# print(str[-5:-2])
+# print(str.endswith("..."))
+# print(str.endswith("yes"))
+# print(str.capitalize())
+# print(str)
+# print(str.replace("a", "b"))
+# print(str.find("i"))
+# print(str.count("i"))
+# conditional statements
+
+# age = 17
+
+# if(age >= 18):
+#     print("is major")
+#     print("can vote")
+# elif(age == 17):
+#     print("is almost major")
+# else:
+#     print("is minor")
+
+# nested
+marks = int(input("enter marks: "))
+
+if(marks >= 90):
+    grade = "A"
+elif (marks >= 80 and marks < 90):
+    grade = "B"
+elif (marks >= 70 and marks < 80):
+    grade = "C"
+else:
+    grade = "D"
+
+print("grade of student is : ", grade)
+
+# nesting:
+
+age = int(input("enter the age: "))
+if(age >= 18):
+    if(age >= 80):
+        print("cannot drive")
+    else:
+        print("can drive")
+else:
+    print("they cannot drive")
