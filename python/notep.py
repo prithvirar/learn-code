@@ -162,26 +162,29 @@
 #     print("is minor")
 
 # nested
-marks = int(input("enter marks: "))
+# marks = int(input("enter marks: "))
 
-if(marks >= 90):
-    grade = "A"
-elif (marks >= 80 and marks < 90):
-    grade = "B"
-elif (marks >= 70 and marks < 80):
-    grade = "C"
-else:
-    grade = "D"
+# if(marks >= 90):
+#     grade = "A"
+# elif (marks >= 80 and marks < 90):
+#     grade = "B"
+# elif (marks >= 70 and marks < 80):
+#     grade = "C"
+# else:
+#     grade = "D"
 
-print("grade of student is : ", grade)
+# print("grade of student is : ", grade)
 
-# nesting:
+# # nesting:
 
-age = int(input("enter the age: "))
-if(age >= 18):
-    if(age >= 80):
-        print("cannot drive")
-    else:
-        print("can drive")
-else:
-    print("they cannot drive")
+# age = int(input("enter the age: "))
+# if(age >= 18):
+#     if(age >= 80):
+#         print("cannot drive")
+#     else:
+#         print("can drive")
+# else:
+#     print("they cannot drive")
+
+# learnt a thing that to do more commits
+# for better contribution chart
