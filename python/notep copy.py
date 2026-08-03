@@ -258,7 +258,7 @@
 # print(len(marks))
 
 #list can store multiple datatypes also 
-student = ["prithvi", 99, "kolkata"]
+# student = ["prithvi", 99, "kolkata"]
 # print(student)
 # # print(student[2])
 # # print(type(student))
@@ -266,3 +266,44 @@ student = ["prithvi", 99, "kolkata"]
 # print(student[0])
 # student[0] = "piku"
 # print(student)
+# print(a+b)
+# print(a-b)
+# print(a*b)
+# print(a/b)
+# print(a%b)
+# print(a**b)
+
+# print(a<b,"less")
+# print(a>b, "great")
+# print(a<=b,'lessequal')
+# print(a>=b, 'greatequl')
+# print(aa==b, 'equal')
+# print(aa!=b, 'noteq')
+
+# a = 21
+# b = 2
+# aa = a
+
+# ba = a+b
+# print('ba' , ba)
+
+# num =3
+# print(num)
+# num%=2
+# print(num)
+
+# str = "hello prithvi"
+# print(str)
+# print(len(str))
+# print("does string ends with i:",str.endswith("i"))
+# print(str.capitalize())
+# print(str.replace("i","a"))
+# print(str.find("prithvi"))
+# print(str.count("l"))
+age = int(input("enter age:"))
+if(age>=18):
+    print("eligible for license")
+elif(age >= 16 and age < 18):
+    print("can have learners permit")
+else:
+    print("underage!")
