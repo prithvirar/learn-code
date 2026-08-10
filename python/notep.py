@@ -258,7 +258,7 @@
 # print(len(marks))
 
 #list can store multiple datatypes also 
-student = ["prithvi", 99, "kolkata"]
+# student = ["prithvi", 99, "kolkata"]
 # print(student)
 # # print(student[2])
 # # print(type(student))
@@ -266,3 +266,102 @@ student = ["prithvi", 99, "kolkata"]
 # print(student[0])
 # student[0] = "piku"
 # print(student)
+#list can store multiple datatypes also 
+# student = ["prithvi", 99, "kolkata"]
+# print(student)
+# # print(student[2])
+# # print(type(student))
+# # print(len(student))
+# print(student[0])
+# student[0] = "piku"
+# print(student)
+# print(a+b)
+# print(a-b)
+# print(a*b)
+# print(a/b)
+# print(a%b)
+# print(a**b)
+
+# print(a<b,"less")
+# print(a>b, "great")
+# print(a<=b,'lessequal')
+# print(a>=b, 'greatequl')
+# print(aa==b, 'equal')
+# print(aa!=b, 'noteq')
+
+# a = 21
+# b = 2
+# aa = a
+
+# ba = a+b
+# print('ba' , ba)
+
+# num =3
+# print(num)
+# num%=2
+# print(num)
+
+# str = "hello prithvi"
+# print(str)
+# print(len(str))
+# print("does string ends with i:",str.endswith("i"))
+# print(str.capitalize())
+# print(str.replace("i","a"))
+# print(str.find("prithvi"))
+# print(str.count("l"))
+# age = int(input("enter age:"))
+# if(age>=18):
+#     print("eligible for license")
+# elif(age >= 16 and age < 18):
+#     print("can have learners permit")
+# else:
+#     print("underage!")
+
+# guy = ["prithvi", 535 , "lateral"]
+# print(type(guy))
+# print(guy)
+
+# list = [12,14,51,13,11]
+# print(list)
+# print(type(list))
+# print(list[-3:])
+# list.append(61)
+# print(f"updated list1\n {list}")
+# list.sort()
+# print(f"updated list2\n {list}")
+# list.sort(reverse=True)
+# print("desc list:", list)
+# fruit = ["mango", "banana", "guava"]
+# fruit.reverse()
+# print(fruit)
+# # fruit.sort(reverse=True)
+# # print("updated list\n ", fruit)
+# fruit.insert(2, "apple")
+# print(fruit.append("banana"))
+# fruit.remove("banana")
+# fruit.pop(1)
+# print(fruit)
+# tup = (12,13,14,15)
+# print(tup)
+# print(tup[1:2])
+# print(fruit.count("banana"))
+# print(tup.count(12))
+# dictionaries are used to store data as key value pairs it is a data structure
+
+# dictionar = {
+#     "keyone" : "prithvi"
+# }
+# print(dictionar["keyone"])
+
+mydat = {
+    "myname":"prithvi",
+    "myage" : 19,
+    "mygender": "male",
+    "mytuple" : ("python",1,"hello"),
+    "mylist" : ["python",1,"hello"]
+}
+print(mydat["myname"])
+print(type(mydat["mylist"]))
+mydat["name"] = "prithviraj"
+mydat["surname"] = "mandal"
+print(mydat)

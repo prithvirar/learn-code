@@ -27,4 +27,4 @@ if((c>b) and (c>a) and (c>d)):
     print("c is greatest value(",c,")")
     
 if((d>b) and (d>c) and (d>a)):
-    print("d is greatest value",(d))
+    print("d is greatest value",d)
