@@ -444,11 +444,79 @@
 # }
 # print(notebook.update(new_notebook))
 # print(notebook)
-# set is similar like dictionary but only saves values and ignores duplicates,immutable only
-collection = {1,22,"prithvi0","ramagundam",True}#here true and 1 are likely similar so set ignores one
-print(collection)
-print(len(collection))
-null_collection = {}
-print(type(null_collection))#dictionary has also same {} so to create a null set use method set()
-collection_null = set()
-print(type(collection_null))
+# set is similar like dictionary but only saves values and ignores duplicates,
+# elements=immutable only but set entirely is mutable can comply changes
+# collection = {1,22,"prithvi0","ramagundam",True}#here true and 1 are likely similar so set ignores one
+# print(collection)
+# print(len(collection))
+# null_collection = {}
+# print(type(null_collection))#dictionary has also same {} so to create a null set use method set()
+# collection_null = set()
+# print(type(collection_null))
+# collection_null.add("hello")
+# collection_null.add("adding in null set using add method")
+# collection_null.add(12.55)
+# collection_null.add((12,13,14))#also we can add tuples beacuse it is hashable
+# print(collection_null.pop())
+# #mutable types are not hashables which don't support to be added
+# print(collection_null)
+# collection_null.remove("adding in null set using add method")
+# print(collection_null)
+# collection_null.pop() #removes random value
+# print(collection_null)
+# collection_null.clear()#removes / clears everything
+# print(collection_null)
+# print(len(collection_null))
+
+# set1 = {1,2,3,4,3,4,5}
+# set2 = {2,3,3,4,5,6}
+# print(set1)
+# print(set1.union(set2))
+# print(set1.intersection(set2))
+# # lecture4 task1 add values in dictionary
+# taskdict = {
+#     "table" : [("a piece of furniture","lists of facs and figures")],
+#     "cat" : "a small animal"
+# }
+# print(taskdict)
+# print(len(taskdict))
+# lecture4 task 2 given a list find redundant length
+# givenlist = ["python","java","C++","python","javascript","java","python","java","C++","C"]
+# print(givenlist)
+# solution_set = set(givenlist)
+# print(solution_set)
+# print("classrooms needed for each subject:",len(solution_set))
+# lecture4 task3 empty dictionary add marks of 3 subjects one by one by user input (watched)
+# stud_dict = {}
+# print(type(stud_dict))
+# maths = int(input("enter marks for maths:"))
+# stud_dict.update({"maths": maths})
+
+
+# chem = int(input("enter marks for chem:"))
+# stud_dict.update({"chem": chem})
+
+
+# bio = int(input("enter marks for bio:"))
+# stud_dict.update({"bio": bio})
+# print(type(stud_dict))
+# print(len(stud_dict))
+# print(stud_dict)
+
+# lecture4 task4 find a way to store 9 and 9.0 in a set
+# we have to solutions i.one we can save as a str | ii.we can save both in a tuple then save them
+
+set9a = {9,"9.0"}
+print(type(set9a))
+print(set9a)
+
+set9b = set()
+set9b.update(("int",9))
+set9b.update(("float",9.0))
+print(set9b)
+
+set9c = {
+    ("int",9),
+    ("float",9.0)
+}
+print(set9c)
