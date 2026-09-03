@@ -411,22 +411,44 @@
 # print(tuplegrade.count("A"))
 # tuplegrade.sort()
 # print(tuplegrade)
-notebook = {
-    "name" : "prithvi",
-    (000,1234) : "coordinates",
-    19 : "my age",
-    "is_adult" : True,
-    "scores" : {
-        "nuclear physics" : [12,14,15,15],
-        "space myths" : [12,14,15,15],
-        "rocket science" : [12,14,15,15],
-        "socialize robots" : [12,14,15,15],
-    }
-}
+# notebook = {
+#     "name" : "prithvi",
+#     (000,1234) : "coordinates",
+#     19 : "my age",
+#     "is_adult" : True,
+#     "scores" : {
+#         "nuclear physics" : [12,14,15,15],
+#         "space myths" : [12,14,15,15],
+#         "rocket science" : [12,14,15,15],
+#         "socialize robots" : [12,14,15,15],
+#     }
+# }
 # print(type(notebook))
 # print(notebook)
 # notebook["name"] = "Prithviraj"
 # print(notebook)
 # print(notebook[(000,1234)])
 # print(notebook["scores"]["nuclear physics"])
-print(notebook["scores"].keys())
+# print(notebook.keys())
+# print(notebook.values())
+# print(len(notebook))
+# print(notebook["scores"].keys())
+# print(list(notebook.keys()))
+# print(notebook.items())
+# print(notebook["name"])     #it gives error
+# print(notebook.get("name")) #it does not give error it checks if didn't find gives none
+# print(notebook)
+# new_notebook = {
+#     "city" : "ramagundam",
+#     "name" : "PRITHVIRAJ MANDAL"
+# }
+# print(notebook.update(new_notebook))
+# print(notebook)
+# set is similar like dictionary but only saves values and ignores duplicates,immutable only
+collection = {1,22,"prithvi0","ramagundam",True}#here true and 1 are likely similar so set ignores one
+print(collection)
+print(len(collection))
+null_collection = {}
+print(type(null_collection))#dictionary has also same {} so to create a null set use method set()
+collection_null = set()
+print(type(collection_null))
