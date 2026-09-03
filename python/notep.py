@@ -353,15 +353,80 @@
 # }
 # print(dictionar["keyone"])
 
-mydat = {
-    "myname":"prithvi",
-    "myage" : 19,
-    "mygender": "male",
-    "mytuple" : ("python",1,"hello"),
-    "mylist" : ["python",1,"hello"]
+# mydat = {
+#     "myname":"prithvi",
+#     "myage" : 19,
+#     "mygender": "male",
+#     "mytuple" : ("python",1,"hello"),
+#     "mylist" : ["python",1,"hello"]
+# }
+# print(mydat["myname"])
+# print(type(mydat["mylist"]))
+# mydat["name"] = "prithviraj" #overwrite
+# mydat["surname"] = "mandal" #add value
+# print(mydat)
+# numlist = [2,1,3]
+# print(numlist)
+# print(numlist.reverse())
+# print(numlist)
+# print(type(numlist))
+# print(len(numlist))
+# print(numlist.append(5))
+# print(numlist)
+# print(numlist.sort())
+# print(numlist.sort(reverse=True))
+# print(numlist)
+# langlist = ["hindi","enlgish","hindi","telugu"]
+# print(langlist.reverse())
+# print(langlist.sort())
+# print(langlist.remove("hindi"))
+# print(langlist)
+# langlist.pop(2)
+# print(langlist)
+# langtuple = ("hindi","telugu","hindi")
+# print(langtuple)
+# print(langtuple.index("telugu"))
+# print(langtuple.count("hindi"))
+# mov1 = input("enter your fav1:")
+# mov3 = input("enter your fav3:")
+# mov2 = input("enter your fav2:")
+
+# movies = [mov1,mov2,mov3]
+# mov4 = input("enter your fav4:")
+# movies.append(mov4)
+# print(movies)
+# songs = []
+# songs.append(input("enter song 1 :"))
+# songs.append(input("enter song 2 :"))
+# songs.append(input("enter song 3 :"))
+# print(songs)
+
+# copysongs = songs.copy()
+# copysongs.reverse()
+# if(songs == copysongs):
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+# tuplegrade = ["C","D","A","A","B","B","A"]
+# print(tuplegrade.count("A"))
+# tuplegrade.sort()
+# print(tuplegrade)
+notebook = {
+    "name" : "prithvi",
+    (000,1234) : "coordinates",
+    19 : "my age",
+    "is_adult" : True,
+    "scores" : {
+        "nuclear physics" : [12,14,15,15],
+        "space myths" : [12,14,15,15],
+        "rocket science" : [12,14,15,15],
+        "socialize robots" : [12,14,15,15],
+    }
 }
-print(mydat["myname"])
-print(type(mydat["mylist"]))
-mydat["name"] = "prithviraj"
-mydat["surname"] = "mandal"
-print(mydat)
+# print(type(notebook))
+# print(notebook)
+# notebook["name"] = "Prithviraj"
+# print(notebook)
+# print(notebook[(000,1234)])
+# print(notebook["scores"]["nuclear physics"])
+print(notebook["scores"].keys())
