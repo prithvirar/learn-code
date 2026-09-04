@@ -506,17 +506,39 @@
 # lecture4 task4 find a way to store 9 and 9.0 in a set
 # we have to solutions i.one we can save as a str | ii.we can save both in a tuple then save them
 
-set9a = {9,"9.0"}
-print(type(set9a))
-print(set9a)
+# set9a = {9,"9.0"}
+# print(type(set9a))
+# print(set9a)
 
-set9b = set()
-set9b.update(("int",9))
-set9b.update(("float",9.0))
-print(set9b)
+# set9b = set()
+# set9b.update(("int",9))
+# set9b.update(("float",9.0))
+# print(set9b)
 
-set9c = {
-    ("int",9),
-    ("float",9.0)
-}
-print(set9c)
+# set9c = {
+#     ("int",9),
+#     ("float",9.0)
+# }
+# print(set9c)
+
+# lecture 5 loops in python
+# while loop
+# coin_count = int(input("enter number of coins counted:"))
+# amount = 0
+# while coin_count <=10:
+#     amount += 1
+#     print("adding 1 rupee to count")
+#     coin_count+=1
+# print(amount)
+
+# i = 1 
+# while i <=3000:
+#     print("i love you...", i)
+#     i += 1
+
+year = int(input("enter the year:"))
+while year == 2007:
+    print("correct")
+    year += 1
+    if year != 2007:
+        print("wrong")
