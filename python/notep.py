@@ -651,11 +651,37 @@ until loop ends"""
 # else is used to print an optional statement for an loop
 # The else block runs only if the loop finishes normally (without hitting a break).
 # If the loop is interrupted by break, the else block is skipped.
-listsquare = []
-val = None
-for i in range (11):
-    val = i**2
-    listsquare.append(val)
-    if (i == 12):
-        break
-print("end")
+
+"""understanding range"""
+# range function gives a sequence of numbers,
+# starting from 0 by default,increments by 1 and stops before specified number
+# seq = range(10)
+# startstop = range(2,10)
+# startstopstep =  range(2,10,2)
+# for i in seq:
+    # print(i)
+
+# can write in 3 types
+# range(10) = given stop before
+# range(2,10) = given start, stop before
+# range(2,10,2) = given start, stop before and step size
+
+"""understanding pass keyword"""
+# it is used to give a loop a null statement so it has a placeholder which can be
+# used later in future
+
+# for i in range (10):
+#     # hello
+# print("future work")
+# this expects something in for block so we use pass so in future we can add anything
+
+# for i in range (10):
+#     pass
+# print("future work")
+
+# also used in conditional statements
+
+a = 10
+if (a < 100):
+    # hello
+print("did check")

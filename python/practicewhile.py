@@ -80,13 +80,26 @@
 
 # search for a number x in the following tuple
 # (1,4,9,16,25,36,49,64,81,100)
-given_tuple = (1,4,9,16,25,36,49,64,81,100)
-print("given tuple is :",given_tuple)
-print("select x within given tuple")
-x = int(input("enter x to find:"))
-i = 0
-while i < len(given_tuple):
-    if(given_tuple[i] == x):
-        print("x found at index:",i)
-    i += 1
-print("end")
+# given_tuple = (1,4,9,16,25,36,49,64,81,100)
+# print("given tuple is :",given_tuple)
+# print("select x within given tuple")
+# x = int(input("enter x to find:"))
+# i = 0
+# while i < len(given_tuple):
+#     if(given_tuple[i] == x):
+#         print("x found at index:",i)
+#     i += 1
+# print("end")
+
+
+n = int(input("enter n:"))
+sum = 0
+i = 1
+while i <= n:
+    print(i)
+    print("sum before ", sum)
+    sum += i
+    print('SUM',sum)
+
+    i +=1
+print(sum)
