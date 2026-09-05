@@ -535,10 +535,4 @@
 # while i <=3000:
 #     print("i love you...", i)
 #     i += 1
-
-year = int(input("enter the year:"))
-while year == 2007:
-    print("correct")
-    year += 1
-    if year != 2007:
-        print("wrong")
+print("hello")
