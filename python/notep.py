@@ -444,8 +444,9 @@
 # }
 # print(notebook.update(new_notebook))
 # print(notebook)
-# set is similar like dictionary but only saves values and ignores duplicates,
-# elements=immutable only but set entirely is mutable can comply changes
+
+"""set is similar like dictionary but only saves values and ignores duplicates,
+elements=immutable only but set entirely is mutable can comply changes"""
 # collection = {1,22,"prithvi0","ramagundam",True}#here true and 1 are likely similar so set ignores one
 # print(collection)
 # print(len(collection))
@@ -458,7 +459,8 @@
 # collection_null.add(12.55)
 # collection_null.add((12,13,14))#also we can add tuples beacuse it is hashable
 # print(collection_null.pop())
-# #mutable types are not hashables which don't support to be added
+
+"""mutable types are not hashables which don't support to be added"""
 # print(collection_null)
 # collection_null.remove("adding in null set using add method")
 # print(collection_null)
@@ -473,7 +475,8 @@
 # print(set1)
 # print(set1.union(set2))
 # print(set1.intersection(set2))
-# # lecture4 task1 add values in dictionary
+
+""" lecture4 task1 add values in dictionary"""
 # taskdict = {
 #     "table" : [("a piece of furniture","lists of facs and figures")],
 #     "cat" : "a small animal"
@@ -486,7 +489,8 @@
 # solution_set = set(givenlist)
 # print(solution_set)
 # print("classrooms needed for each subject:",len(solution_set))
-# lecture4 task3 empty dictionary add marks of 3 subjects one by one by user input (watched)
+
+"""lecture4 task3 empty dictionary add marks of 3 subjects one by one by user input (watched)"""
 # stud_dict = {}
 # print(type(stud_dict))
 # maths = int(input("enter marks for maths:"))
@@ -503,8 +507,8 @@
 # print(len(stud_dict))
 # print(stud_dict)
 
-# lecture4 task4 find a way to store 9 and 9.0 in a set
-# we have to solutions i.one we can save as a str | ii.we can save both in a tuple then save them
+"""lecture4 task4 find a way to store 9 and 9.0 in a set
+we have to solutions i.one we can save as a str | ii.we can save both in a tuple then save them"""
 
 # set9a = {9,"9.0"}
 # print(type(set9a))
@@ -521,7 +525,7 @@
 # }
 # print(set9c)
 
-# lecture 5 loops in python
+""" lecture 5 loops in python"""
 # while loop
 # coin_count = int(input("enter number of coins counted:"))
 # amount = 0
@@ -535,4 +539,123 @@
 # while i <=3000:
 #     print("i love you...", i)
 #     i += 1
-print("hello")
+# print("hello")
+
+
+"""understanding break"""
+# a = 1
+# while a < 6:
+#     print(a)
+#     if a == 3:
+#         break
+#     a += 1
+# print("end")
+
+"""example if our code is like"""
+# given_tuple = (1,4,9,16,25,36,49,64,81,100)
+# print("given tuple is :",given_tuple)
+# print("select x within given tuple")
+# x = int(input("enter x to find:"))
+# i = 0
+# while i < len(given_tuple):
+#     if(given_tuple[i] == x):
+#         print("x found at index:",i)
+#     else:
+#         print("finding...")
+#     i += 1
+# print("end")
+
+"""gives finding because even it gets an answer,it still searches for any possible second answer
+until loop ends"""
+# so it looks like
+
+# given_tuple = (1,4,9,16,25,36,49,64,81,100)
+# print("given tuple is :",given_tuple)
+# print("select x within given tuple")
+# x = int(input("enter x to find:"))
+# i = 0
+# while i < len(given_tuple):
+#     if(given_tuple[i] == x):
+#         print("x found at index:",i)
+#         break
+#     else:
+#         print("finding...")
+#     i += 1
+# print("end")
+
+#  so it ends after it met a solution condition
+
+"""understanding continue """
+# i = 0
+# while i <= 5:
+#     if (i == 3):
+#         i += 1 
+#         continue #continue acts as skip for 3 even it met continue checking
+#     print(i)
+#     i += 1
+# print("end")
+
+# """proper tic tac to explantion"""
+# board = [" " for i in range(9)]
+# player = "X"
+
+# while True:
+#     # display board
+#     print(board[0], "|", board[1], "|", board[2])
+#     print("---+---+---")
+#     print(board[3], "|", board[4], "|", board[5])
+#     print("---+---+---")
+#     print(board[6], "|", board[7], "|", board[8])
+
+#     pos = int(input("Player " + player + " choose position (1-9): ")) - 1
+
+#     # if position already taken → skip rest of loop
+#     if board[pos] != " ":
+#         print("Position already occupied! Try again.")
+#         continue   # same player gets another chance
+
+#     # update board
+#     board[pos] = player
+
+#     # check winner (simple row example)
+#     if board[0] == board[1] == board[2] == player or \
+#        board[3] == board[4] == board[5] == player or \
+#        board[6] == board[7] == board[8] == player:
+#         print(" Player", player, "wins!")
+#         break
+
+#     # switch player
+#     player = "O" if player == "X" else "X"
+
+# break = is used to terminate loop when encountered condiditon
+# continue = terminates execution in the current iteration & continues executioin of the loop
+# with the next iteration 
+
+"""understanding for"""
+# veggies = ["potato","tomato","cucumber"]
+
+# for val in veggies:
+#     print(val)
+
+# for i in range(9):
+#     print(i)
+# name = "prithvi"
+# for v in name:
+#     print(v)
+#     if(v == "i"):
+#         print("skipping")
+#         break
+# else:
+#     print("end")
+
+# else is used to print an optional statement for an loop
+# The else block runs only if the loop finishes normally (without hitting a break).
+# If the loop is interrupted by break, the else block is skipped.
+listsquare = []
+val = None
+for i in range (11):
+    val = i**2
+    listsquare.append(val)
+    if (i == 12):
+        break
+print("end")
