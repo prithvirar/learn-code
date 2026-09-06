@@ -1,3 +1,4 @@
+# lecture 1
 # wap to input to numbers & print their sum
 
 # a = int(input("enter a value:"))
@@ -25,6 +26,7 @@
 # b = int(input("enter b value:"))
 # print(a>=b)
 
+# lecture 2
 # wap to input users first name and print its length
 
 # name = input("enter your first name:")
@@ -97,8 +99,86 @@
 # wap to find given value is multiple of 7 or not
 # Program to find the largest of 4 numbers using conditionals
 
-a = int(input("Enter a value: "))
-if(a%7==0):
-    print("it is multiple of seven")
-else:
-    print("it is not multiple of seven")
+# a = int(input("Enter a value: "))
+# if(a%7==0):
+#     print("it is multiple of seven")
+# else:
+#     print("it is not multiple of seven")
+
+# lecture 3
+# list1 = [1,2,3,4,5,6,7]
+# slicing = listname[starting and ending] /ending doesn't print one behind
+# print(list1[0:7]) # length is 7 ending index is 6 actually n+1 = 7
+# print(list1[-7:-1])
+# print(list1.append(8))
+# print(list1)
+# print(list1.index(7))
+# print(list1.sort(reverse=True))
+# print(list1)
+# print(list1.reverse())
+# print(list1)
+# list1.insert(6,"hello")
+# list1.insert(7, 8)
+# print(list1)
+# print(list1)
+# list1.append(1)
+# print(list1)
+# list1.remove(1)
+# list1.pop(3)
+# print(list1)
+"""
+pop(Index)
+list.append(element)
+list.remove(first occurance of element)
+
+list.insert(index , element)"""
+
+# tuple1 = (1,2,3,4,5,6,6,7,6)
+# print(tuple1)
+# print(tuple1[-4:-1])
+
+# print(tuple1.index(4))
+# print(tuple1.count(6))
+
+# wap to enter 3 strings and store them in a list
+listmov = []
+
+# fav1 = input("enter fav1:")
+# listmov.append(fav1)
+# fav2 = input("enter fav2:")
+# listmov.append(fav2)
+# fav3 = input("enter fav3:")
+# listmov.append(fav3)
+# print(listmov)
+
+# listmov.append(input("enter fav movie"))
+# listmov.append(input("enter fav movie"))
+# listmov.append(input("enter fav movie"))
+
+# print(listmov)
+
+# wap to check list is palindrome
+
+# a = int(input("enter a value:"))
+# b = int(input("enter b value:"))
+# c = int(input("enter c value:"))
+# d = int(input("enter d value:"))
+# e = int(input("enter e value:"))
+
+# listnum = [a,b,c,d,e]
+
+# listnumcop = listnum.copy()
+# listnumcop.reverse()
+# if (listnumcop == listnum):
+#     print("list is palindrome")
+# else:
+#     print("list is not palindrome")
+
+# wap to count the no. of students with A grade from given list
+grade = ("C","D","A","A","B","B","A")
+print("no. of students with A grade:", grade.count("A"))
+
+#store the above in a list sort the values to A to D
+# new_grade = grade.copy()
+# new_grade.sort()
+# print(new_grade)
