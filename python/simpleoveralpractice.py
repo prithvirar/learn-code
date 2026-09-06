@@ -175,10 +175,84 @@ listmov = []
 #     print("list is not palindrome")
 
 # wap to count the no. of students with A grade from given list
-grade = ("C","D","A","A","B","B","A")
-print("no. of students with A grade:", grade.count("A"))
+# grade = ("C","D","A","A","B","B","A")
+# print("no. of students with A grade:", grade.count("A"))
 
 #store the above in a list sort the values to A to D
 # new_grade = grade.copy()
 # new_grade.sort()
 # print(new_grade)
+
+# dictnames = {
+#     101 : "prithvi",
+#     102 : "priyanka",
+#     103 : "saloni",
+#     104 : "swati",
+    
+#     "score" : {
+#         "mathmarks" : [0,99,22,92,20],
+#         "sciencemarks" : [0,93,52,62,70]
+#     }
+# }
+# print(dictnames["score"]["mathmarks"])
+# print(dictnames.items())
+# print(dictnames.get(101))
+# city = {
+
+# "cities" : "ramagundam"   
+# }
+# dictnames.update(city)
+# print(dictnames)
+
+# sets = {1,2,1,2,3,4,5,6}
+# print(sets)
+# in sets repeated elements are stored only once so it is resoluted to {1,2,3,4,5,6}
+# set stores immutable elements but is not immutable it is mutable 
+# emp_set = set()
+# emp_set.add(1)
+# print("empset is :",emp_set)
+# sets.add(8)
+# sets.remove(1) # removes all occurances of the element
+# print(sets)
+# sets.pop()
+# sets.union(emp_set)
+# print(sets)
+# sets.intersection(emp_set)
+# print(sets)
+
+# store following word meanings into a dictionary
+# table = "a piece of furniture", "lists of facts & figures"
+# cat = "a small animal"
+
+# taskdict = {
+#     "table" : ["a piece of furniture", "lists of facts & figures"],
+#     "cat" : "a small animal"
+# }
+
+# print(taskdict)
+
+# listsub = ["python","java","c++","python","javascript","java","python","java","c++","c"]
+
+# sets = {"python","java","c++","python","javascript","java","python","java","c++","c"}
+
+# print(len(sets))
+
+# wap to input marks of 3 subjects and store them in dictionary, start with an empty dictionary
+# and add one by one,use subject name as key and marks as value
+
+# scoredict = {}
+# math = int(input("enter math marks:"))
+# phy = int(input("enter phy marks:"))
+# bio = int(input("enter bio marks:"))
+
+# scoredict.update({"maths" : math})
+# scoredict.update({"physics" : phy})
+# scoredict.update({"biology" : bio})
+
+# print(scoredict)
+
+# wap to store 9 and 9.0 in a set figure it out
+set9 = set()
+set9.add(int(9))
+set9.add("9.0")
+print(set9)
