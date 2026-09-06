@@ -753,7 +753,34 @@ until loop ends"""
 # print(ad)
 
 # example which not works
-def adda(a=1, b):
-    return a + b
-ad = adda(1)
-print(ad)
+# def adda(a=1, b):
+#     return a + b
+# ad = adda(1)
+# print(ad)
+# gives
+# SyntaxError: parameter without a default follows parameter with a default
+
+"""understanding recursion"""
+# recursion is a concept when a function calls itself repeatedly until mets a base condition
+
+# example
+# def fact(n):
+#     if(n == 1 or n == 0):
+#         return 1
+#     else:
+#         return fact(n-1)*n  #here the fucntion body has a function call inside itself saving a call stack
+# print(fact(5))
+
+# fact(n-1) stores first in call stack then goes back again calling n-1 until base condition is met
+# then after it breaks condition the left *n part fact(n-1)*n continues and calculates
+
+# call stack is a stack which stores the recursion calls and
+# after base condition is met the body is executed
+
+def show(n):
+    if(n==0):
+        return
+    print(n)
+    show(n-1)
+
+show(5)
