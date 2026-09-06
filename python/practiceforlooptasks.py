@@ -55,15 +55,10 @@
 # print(sum)
 
 # factorial for given n using for
-n = int(input("enter n:"))
-fact = 1
-i = 1
-for i in range(1,n+1):
-    print("before i",i)
-    print("before fact",fact)
-    fact *= i
-    i += 1
-    print("after fact",fact)
-    print("after i",i)
-
-print(fact)
+# n = int(input("enter n:"))
+# fact = 1
+# i = 1
+# for i in range(1,n+1):
+#     fact *= i
+#     i += 1
+# print(fact)

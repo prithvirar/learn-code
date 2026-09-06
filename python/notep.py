@@ -681,7 +681,79 @@ until loop ends"""
 
 # also used in conditional statements
 
-a = 10
-if (a < 100):
-    # hello
-print("did check")
+# a = 10
+# if (a < 100):
+#     # hello
+# print("did check")
+
+# solution
+# a = 10
+# if (a < 100):
+#     pass
+# print("did check")
+
+# lecture 6 functions and recursion
+"""understanding functions"""
+# block of statements that perform a specific task by calling them
+# def func_name(parameter1, parameter2):   /function definition
+#           sum = parameter1+parameter2
+#           print(sum)
+#           return sum
+
+# func_name(argument1, argument2) / calling a function & arguments are values to pass on parameter
+
+# # example1
+# def add(a, b):
+#     print(a + b)   # just prints result
+
+# result = add(3, 4)   # function runs
+# print("Result is:", result)
+
+# example2
+# def add(a, b):
+#     return a + b   # sends result back
+
+# result = add(3, 4)   # function returns 7
+# print("Result is:", result)
+
+
+# def calc_sum(a,b):
+#     sum = a+b
+#     print(sum)
+#     return sum
+# calc_sum(134,3)
+
+# def avertre(a, b, c):
+#     aver = (a+b+c)/3
+#     print("average of three:", aver)
+# avertre(2,3,4)
+
+# def calavg(a, b, c):
+#     avg = (a+b+c)/3
+#     return avg
+# result = calavg(2,3,4)
+# print(result)
+
+# functions are two types predefined functions and userdefined 
+# predefined include print() len() type() range()
+
+# to print to statements in same line use end = " " becuase in predefined code we have end="\n"
+
+# print("hello prithvi", end=" ")
+# print("this is actually second line but includes in line one because end is a space", end="$")
+# print("u can also use anything to add at end and continue statement like $ used in between second and this line")
+
+"""understanding default parameters"""
+# assigning a default value to a parameter, which is used when no argument is passed.
+# constraint is first it should have a non-default parameter then a default parameter can be given
+# example which works
+# def adda(a, b=2):
+#     return a + b
+# ad = adda(1)
+# print(ad)
+
+# example which not works
+def adda(a=1, b):
+    return a + b
+ad = adda(1)
+print(ad)

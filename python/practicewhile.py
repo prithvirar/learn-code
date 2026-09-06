@@ -91,15 +91,12 @@
 #     i += 1
 # print("end")
 
-
-n = int(input("enter n:"))
-sum = 0
-i = 1
-while i <= n:
-    print(i)
-    print("sum before ", sum)
-    sum += i
-    print('SUM',sum)
-
-    i +=1
-print(sum)
+# wap to print sum of given n natural numbers
+# n = int(input("enter n:"))
+# sum = 0
+# i = 1
+# while i <= n:
+#     print(i)
+#     sum += i
+#     i +=1
+# print(sum)
