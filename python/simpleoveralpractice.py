@@ -252,7 +252,37 @@ listmov = []
 # print(scoredict)
 
 # wap to store 9 and 9.0 in a set figure it out
-set9 = set()
-set9.add(int(9))
-set9.add("9.0")
-print(set9)
+# set9 = set()
+# set9.add(int(9))
+# set9.add("9.0")
+# print(set9)
+
+# wap to print numbers 1 - 100 using while loop
+# a = 0
+# while(a<100):
+#     a+=1
+#     print(a)
+
+# wap to print numbers 100 - 1 using while loop
+# a = 100
+# while(a>1):
+#     a-=1
+#     print(a)
+
+# wap to print a multiplication table of a number
+# m = 2
+# i=1
+# while(i<11):
+#     print(f"{m}x{i}=",m*i)
+#     i+=1
+
+# wap to print the elements of list using a loop
+listsq = [1,4,9,16,25,36,49,64,81,100]
+# i=0
+# while(i<10):
+#     print(listsq[i])
+#     i+=1
+a=1
+while(a<11):
+    print(a**2)
+    a+=1
