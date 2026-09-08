@@ -92,11 +92,11 @@
 # print("end")
 
 # wap to print sum of given n natural numbers
-# n = int(input("enter n:"))
-# sum = 0
-# i = 1
-# while i <= n:
-#     print(i)
-#     sum += i
-#     i +=1
-# print(sum)
+n = int(input("enter n:"))
+sum = 0
+i = 1
+while i <= n:
+    print(i)
+    sum += i
+    i +=1
+print(sum)

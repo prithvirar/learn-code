@@ -277,12 +277,66 @@ listmov = []
 #     i+=1
 
 # wap to print the elements of list using a loop
-listsq = [1,4,9,16,25,36,49,64,81,100]
+# listsq = [1,4,9,16,25,36,49,64,81,100]
 # i=0
 # while(i<10):
 #     print(listsq[i])
 #     i+=1
-a=1
-while(a<11):
-    print(a**2)
-    a+=1
+# a=1
+# while(a<11):
+#     print(a**2)
+#     a+=1
+
+# wap to print sum of first n natural numbers using while
+# n = int(input("enter n:"))
+# sum = 0
+# i = 0
+# while (i<=n):
+#     sum += i
+#     i+=1
+# print(sum)
+
+# wap to find factorial of first n numbers using for
+# n = int(input("enter n:"))
+# fact = 1
+# i = 1
+# for i in range(1,n+1):
+#     fact *= i
+#     print(fact)
+
+# waf to print the length of list (list is parameter)
+# fruits = ["apple","banana","custard","dragon"]
+# def callen(l):
+#     print(len(l))
+# callen(fruits)
+
+# waf to print the elements of a list in a single line
+# fruits = ["apple","banana","custard","dragon"]
+# def listline(list):
+#     for i in list:
+#         print(i, end=" ")
+# listline(fruits)
+# print(" ")
+# print("end")
+
+# waf to print the factorial of n 
+# def factcal(n):
+#     fact = 1
+#     i = 1
+#     for i in range(1,n+1):
+#         fact*=i
+#     print(fact)
+# factcal(int(input("enter n:")))
+
+# waf to convert usd to inr
+# def convert(n):
+#     print("USD-INR VALUE =",n*94.49)
+
+# usd = int(input("enter usd:"))
+# convert(usd)
+
+# wa recursive function to print sum of first n natural numbers
+def calcsum(n):
+    sum = 0
+    print(n)
+calcsum(5)
