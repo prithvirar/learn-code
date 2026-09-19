@@ -123,7 +123,7 @@
 # print(type(balance))
 
 # day 2 of python
-# string 
+"""strings"""
 # it is a datatype that stores sequence of characters
 
 # basic operations
@@ -763,7 +763,15 @@ until loop ends"""
 """understanding recursion"""
 # recursion is a concept when a function calls itself repeatedly until mets a base condition
 
-# example
+# def show(n):
+#     if(n==0):  """base condition"""
+#         return
+#     print(n)
+#     show(n-1)
+# show(5)
+
+# proper example
+
 # def fact(n):
 #     if(n == 1 or n == 0):
 #         return 1
@@ -777,10 +785,140 @@ until loop ends"""
 # call stack is a stack which stores the recursion calls and
 # after base condition is met the body is executed
 
-def show(n):
-    if(n==0):
-        return
-    print(n)
-    show(n-1)
+""" lecture 7 file input & output"""
+# f = open("testfile.txt","r")
+# f is variable | open is kinda function inside path/filename[if within folder],mode of operation
+# data = f.read()
+# within a variable we store the data for the file to print
+# print(data)
+# print(type(data))
+# f.close()
 
-show(5)
+# ==============================
+# 1. Python File Modes Reference
+# ==============================
+
+# Character | Meaning
+# --------------------
+# 'r'  → open for reading (default)
+# 'w'  → open for writing, truncating the file first
+# 'x'  → create a new file and open it for writing
+# 'a'  → open for writing, appending to the end of the file if it exists
+# 'b'  → binary mode
+# 't'  → text mode (default)
+# '+'  → open a disk file for updating (reading and writing)
+
+
+# ==============================
+# 2.Python File Modes Reference
+# ==============================
+
+# 'r'  → Open for reading (default). File must exist.
+# 'w'  → Open for writing. Creates new file or overwrites existing.
+# 'x'  → Create a new file and open for writing. Error if file exists.
+# 'a'  → Open for writing. Appends data at the end if file exists.
+# 'b'  → Binary mode (e.g., images, audio, video files).
+# 't'  → Text mode (default). Used for normal text files.
+# '+'  → Update mode. Allows both reading and writing. r+/w+
+
+# Example:
+# f = open("testfile.txt", "r")   # open in read mode
+# data = f.read()                 # read contents
+# f.close()                       # close file
+
+
+# f = open(r"C:\Users\prith\Documents\anime list.txt","a")
+# data = f.write("\ndemon slayer")
+# data = f.write("\njujutsu kaisen")
+# print(data)
+# print(type(data))
+# f.close()
+
+# there is a pointer/stream concept when we perform any operation
+# our cursor end is the start for next print statement
+
+# f = open("testfile.txt","w")
+# f.write("my name is")
+# f.close()
+
+# f= open("demo.txt","r+")
+# f.write("my name ")
+# f.close()
+
+# r+  = read + overwrite  |pointer at start / no truncate
+# w+  = write + overwrite |file is empty / truncate
+# a+  = read + overwrite  |pointer at end / no truncate
+
+# with open("demo.txt","r") as f:
+#     data = f.read()
+#     print(data)
+
+# with keyword automatically closes file
+
+"""delete file"""
+# need to import os file
+# import os
+
+# os.remove("intro.txt")
+# def repfile():
+#     with open("practice.txt", "r") as f:
+#         # f.write("Hi everyone\nWe are learning File I/O\nusing Java\nI like programming in Java")
+#         data = f.read()
+#         print(data.replace("Java","python"))
+# repfile()
+
+# with open("practice.txt", "r") as f:
+#         # f.write("Hi everyone\nWe are learning File I/O\nusing Java\nI like programming in Java")
+#         data = f.read()
+#         print(data)
+#         newdata = data.replace("Java","python")
+#         print("------------------")
+#         print(newdata)
+
+# with open("practice.txt", "w") as d:
+#         d.write(newdata)
+
+# def checkforword():
+#     with open("practice.txt", "r") as f:
+#         data = f.read()
+#         word = "learning"
+#         if(data.find(word) != -1):
+#             print("found at",data.find(word))
+#         else:
+#             print("not found")
+
+# def checkforline():
+        
+#         wordd = "programming"
+#         data = True
+#         line = 1
+#         with open("practice.txt", "r") as f:
+            
+#             while data:
+#                 data = f.readline()
+#                 if(wordd in data):
+#                      print("found at line ",line)
+#                      return
+#                 line += 1
+#             return -1
+
+# checkforline()
+
+count = 0
+with open("evennum.txt","r") as f:
+     data = f.read()
+     print(data)
+
+     nums = data.split(",")
+    #  print(nums)
+     for val in nums:
+          if(int(val)%2 == 0):
+               count+=1
+print(count)
+    #  num = ""
+    #  for i in range(len(data)):
+    #       if(data[i]==","):
+    #            print(int(num))
+    #            num=""
+    #       else:
+    #            num += data[i]

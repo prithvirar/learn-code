@@ -1,0 +1,5 @@
+# test after username change
+# changed my username
+# and learnt that the more number of commits i do 
+# the more darker the color in contribution chart gets
+# from now on i will try to make more number of commits

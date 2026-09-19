@@ -336,7 +336,13 @@ listmov = []
 # convert(usd)
 
 # wa recursive function to print sum of first n natural numbers
-def calcsum(n):
-    sum = 0
-    print(n)
-calcsum(5)
+# def calcsum(n):
+#     sum = 0
+#     whi
+#     if (n == 0):
+#         return
+#     else:
+#         sum += calcsum(n-1)
+#     print(sum)
+
+# calcsum(5)
