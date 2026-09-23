@@ -917,16 +917,92 @@ until loop ends"""
 #           else:
 #                num += data[i]
 
-def counteven():
-     count = 0
-     with open("evennum.txt","r") as f:
-        data = f.read()
-        print(data)
+# def counteven():
+#      count = 0
+#      with open("evennum.txt","r") as f:
+#         data = f.read()
+#         print(data)
 
-        nums = data.split(",")
-        # print(nums)
-        for val in nums:
-          if(int(val)%2 == 0):
-               count+=1
-     print(count)
-counteven()
+#         nums = data.split(",")
+#         # print(nums)
+#         for val in nums:
+#           if(int(val)%2 == 0):
+#                count+=1
+#      print(count)
+# counteven()
+
+
+"""lecture 8 OOP's part1"""
+# class and object in python
+
+"""creating class"""
+# class Student:
+#     name = "prithvi"
+
+# class attributes = data within class like name = "prithvi" above
+# // →   A variable that belongs to the class itself and is shared across all objects of that class.
+
+"""creating objects"""
+# obj1 = Student()
+# print(obj1.name)
+
+# object attribute = when defining multiple different attribute data to objects
+# // → A variable that belongs to a specific object instance (unique per object).
+
+"""__init__ function / CONSTRUCTOR """
+# all classes have a func called __init__, which is defaultly executed always even not specified
+# we specify constructor to give multiple arguments fo different objects
+
+# if we use multiple objects but define single name every object will have same name
+# class Student:
+#     name = "prithvi"
+
+# s1 = Student()
+# s2 = Student()
+# print(s1.name)
+# print(s2.name)
+
+# but if we have a constructor
+# class Student:
+#     def __init__(self, name,):
+#         self.name = name
+    
+# s1 = Student("prithvi", [99, 98, 100])
+# s2 = Student("thvipir", [99, 98, 100])
+# print(s1.name)
+# print(s2.name)
+
+
+"""python can have only single constructor if written multiple the last constructor overwrites past"""
+# but we can have multiple methods
+# methods = are functions that belong to objects
+
+class Student:
+    def __init__(self, name,marks):
+        self.name = name
+        self.marks = marks
+    def tot(self):
+        print(f"total marks of {self.name}",sum(self.marks))
+s1 = Student("prithvi", [99, 98, 100])
+s2 = Student("thvipir", [99, 98, 100])
+print(s1.name)
+s1.tot()
+print(s2.name)
+
+# a method should have an argument because it is a fucntion for object 
+
+"""static methods"""
+# if we don't pass object instance so we have to pass decorator to change behaviour of funciton
+# class College:
+#     def greet():
+#         print("hello")
+# s1 = College()
+# s1.greet() #here we get error because no argument passed for greet function
+
+# so we use @staticmethod which is a decorator and  change behaviour of funciton
+# class College:
+#     @staticmethod
+#     def greet():
+#         print("hello")
+# s1 = College()
+# s1.greet()
