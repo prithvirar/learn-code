@@ -14,23 +14,44 @@
 
 
 """create class Account 2 attributes:AccNO. & Balance, create methods for debit,credit get balance"""
-class Bank:
-    def __init__(self, Accn, Baln):
-        self.Accn = Accn
-        self.Baln = Baln
-    def credit(self,cred):
-        self.Baln += cred
-        print(f"{cred} dollars were credited to Account {self.Accn} ")        
-    def debit(self,deb):
-            self.Baln -= deb
-            print(f"{deb} dollars were debited from Account {self.Accn} ")
-    def cbal(self):
-         print(f"current balance of {self.Accn} is: ", self.Baln)
+# class Bank:
+#     def __init__(self, Accn, Baln):
+#         self.Accn = Accn
+#         self.Baln = Baln
+#     def credit(self,cred):
+#         self.Baln += cred
+#         print(f"{cred} dollars were credited to Account {self.Accn} ")        
+#     def debit(self,deb):
+#             self.Baln -= deb
+#             print(f"{deb} dollars were debited from Account {self.Accn} ")
+#     def cbal(self):
+#          print(f"current balance of {self.Accn} is: ", self.Baln)
 
-cust1 = Bank(8790, 1111111111)
-cust2 = Bank(9618, 9999999999)
-cust1.credit(123)
-cust1.debit(3456)
-cust1.credit(9876)
-cust1.debit(5000)
-cust1.cbal()
+# cust1 = Bank(8790, 1111111111)
+# cust2 = Bank(9618, 9999999999)
+# cust1.credit(123)
+# cust1.debit(3456)
+# cust1.cbal()
+
+# practicing private methods and attribute
+
+# class Bank:
+#     def __init__(self, acno, acpin):
+#         self.acno = acno
+#         self.__acpin = acpin
+#     def check(self):
+#         print(self.__acpin)
+# a1 = Bank(11,"aa")
+# print(a1.acno)
+# print(a1.check())
+
+class Person:
+    def __init__(self, name):
+        self.__name = name
+    def __greet(self):
+        print("hello")
+    def give(self):
+        self.__greet()
+        return self.__name
+p = Person("prithvi")
+print(p.__greet())

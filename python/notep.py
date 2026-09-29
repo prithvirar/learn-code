@@ -977,17 +977,15 @@ until loop ends"""
 # but we can have multiple methods
 # methods = are functions that belong to objects
 
-class Student:
-    def __init__(self, name,marks):
-        self.name = name
-        self.marks = marks
-    def tot(self):
-        print(f"total marks of {self.name}",sum(self.marks))
-s1 = Student("prithvi", [99, 98, 100])
-s2 = Student("thvipir", [99, 98, 100])
-print(s1.name)
-s1.tot()
-print(s2.name)
+# class Student:
+#     def __init__(self, name,marks):
+#         self.name = name
+#         self.marks = marks
+#     def tot(self):
+#         print(f"total marks of {self.name}",sum(self.marks))
+# s1 = Student("prithvi", [99, 98, 100])
+# print(s1.name)
+# s1.tot()
 
 # a method should have an argument because it is a fucntion for object 
 
@@ -999,6 +997,9 @@ print(s2.name)
 # s1 = College()
 # s1.greet() #here we get error because no argument passed for greet function
 
+# decorators allow to wrap another fucn in order to extend behaviour of wrapped func 
+# without permanently modifying it
+
 # so we use @staticmethod which is a decorator and  change behaviour of funciton
 # class College:
 #     @staticmethod
@@ -1006,3 +1007,116 @@ print(s2.name)
 #         print("hello")
 # s1 = College()
 # s1.greet()
+
+"""Lecture 9 OOPs 2"""
+
+"""del"""
+# it is a keyword used to delete a object attribute or overall object
+
+"""private class or method"""
+# Single underscore (_var) → protected by convention.
+#  It signals “don’t use this outside the class,” but you still can.
+
+# Double underscore (__var) → name mangling. 
+# Python changes the variable name internally to _ClassName__var, 
+# making it harder to access directly.
+
+""" practicing private methods and attribute"""
+# private attribute:
+# class Naming:
+#     def __init__(self, name):
+#         # private instance attribute
+#         self.__name = name
+
+#     def give(self):
+#         # safe way to access private attribute
+#         return self.__name
+
+# s1 = Naming("prithvi")
+# print(s1.give())   # Output: prithvi
+
+# private methods:
+# class Person:
+#     def __init__(self, name):
+#         self.__name = name
+    
+#     def __greet(self):  #private method (can be accessed within class )
+#         print("hello")
+    
+#     def give(self):
+#         self.__greet()  #calling the private method as this method is within class
+#         return self.__name
+# p = Person("prithvi")
+# print(p.give())
+
+# class Bank:
+#     def __init__(self, acno, acpin):
+#         self.acno = acno
+#         self.__acpin = acpin
+#     def check(self):
+#         print(self.__acpin)
+# a1 = Bank(11,"aa")
+# print(a1.acno)
+# print(a1.check())
+
+
+"""INHERITANCE"""
+# Inheritance = one class (child) reuses code from another class (parent).
+
+# multi-level
+# class Car:
+#     color = "black"
+#     @staticmethod
+#     def stop():
+#             print("car is stopped")
+#     @staticmethod
+#     def start():
+#         print("car is started")
+
+# class Toyota(Car):
+#     def __init__ (self,brand):
+#           self.brand = brand
+
+# class Supra(Toyota):
+#     def __init__(self, type):
+#          self.type = type
+
+# c1 = Supra("Hybrid")
+# print(c1.start())
+
+# multiple inheritance
+# class A:
+#     v1 = "welcome A"
+# class B:
+#     v2 = "welcome B"
+# class C(A, B):
+#     v3 = "welcome C"
+
+# c1 = C()
+# print(c1.v1)
+# print(c1.v2)
+# print(c1.v3)
+
+class Car:
+    color = "black"
+    def __init__(self, type):
+        self.type = type
+    @staticmethod
+    def start():
+        print("car is started")
+    @staticmethod
+    def stop():
+        print("car is stopped")
+class Toyota(Car):
+    def __init__(self, type, brand):
+        super().__init__(type)
+        self.brand = brand
+car = Toyota("electric", "supra")
+# print(car.type)
+
+class Fiat(Car):
+    def __init__(self, type):
+        super().__init__(type)
+car2 = Fiat("petrol")
+print(car2.type)
+car2.start()
